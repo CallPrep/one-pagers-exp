@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Prospecting Information</title>
+    <style>
+        body {font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f9f9f9;}
+        h1, h2, h3 {color: #333; margin-bottom: 10px;}
+        a {color: #007bff; text-decoration: none;}
+        a:hover {text-decoration: underline;}
+        .section {margin-bottom: 25px; background-color: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+        .section h2 {border-bottom: 2px solid #007bff; padding-bottom: 5px; margin-bottom: 15px; color: #007bff;}
+        .read-more {font-style: italic; font-size: 0.9em; color: #28a745;}
+        .red-flag {color: #dc3545; font-weight: bold;}
+        table {width: 100%; border-collapse: collapse; margin-top: 15px;}
+        th, td {padding: 12px; border: 1px solid #ddd; text-align: left;}
+        th {background-color: #f5f5f5; font-weight: bold;}
+        tr:nth-child(even) {background-color: #f9f9f9;}
+        ul {list-style-type: disc; margin-left: 20px; padding-left: 20px;}
+        .connections {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .connection-group {
+            flex: 1 1 45%; /* Allows two connection groups per row */
+            margin-bottom: 15px;
+        }
+        .connection-group h3 {
+            margin-bottom: 8px;
+            color: #007bff;
+            font-size: 1.1em;
+        }
+        .connection-group p {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* Collapsible Section */
+        .collapsible {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .active, .collapsible:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            padding: 0 18px;
+            display: block;  /* Open by default */
+            overflow: hidden;
+            background-color: #f9f9f9;
+            margin-top: 10px;
+            border-left: 3px solid #007bff;
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+    </head>
+    <body>
+    
+    <h1>Kevin Purcell</h1>
+    <h2>Director Of Information Technology Applications, Platforms, and Development</h2>
+    <p><a href="https://www.linkedin.com/in/kevin-purcell-4a74924" target="_blank">LinkedIn Profile</a></p>
+    
+        <button class="collapsible">Summary</button>
+        <div class="content">
+            <p>IT (Information Technology) Professional with 30-Plus years of IT experience with a strong customer and process focus. In my current role as IT Director for Enterprise Platforms and Applications I lead 4 unique teams in both operational and project/development focus efforts. Some top highlights from the past six months: 
+
+The setup of private generative AI (Artificial Intelligence) platform with a Series A start up. We have hardened and stabilized the platform to allow faster access to correct data while ensuring security. 
+
+Moved to production of a Service Now CMDB (Configuration Management Database) based on manual application inventory work that is now all automated with Service Now Discovery. This not only gains efficiencies for IT in day-to-day operations but allows us to be in a better position for future federal audits and data calls. 
+
+All operational back-ups moved to the cloud from a legacy on-premises tape library to AWS (Amazon Web Services) closing out a federal cyber security finding and providing the lab with better business continuity and disaster recovery posture. 
+
+Completed tenure on the Princeton Plasma Physic Lab sub council board for their ERP (Enterprise Resource Planning) Financials move to the cloud. The project ended on time and met all federal and University expectations.</p>
+        </div>
+        
+        <button class="collapsible">About Stanford University</button>
+        <div class="content">
+        <p><strong>Account Name:</strong> Stanford University</p><p><strong>Geo - Country:</strong> United States</p><p><strong>Industry Vertical:</strong> higher education</p><p><strong>Number of Employees:</strong> 27000</p><p><strong>Annual Turnover (US $):</strong> 1.2B</p><p><strong>Line of Businesses:</strong> consumer internet, enterprise software, clean technology, biotechnology, software, life sciences, internet, information technology, higher education, research, teaching, natural sciences, social sciences, humanities, interdisciplinary research, engineering, business, medicine, law, k12 education, earth science</p><p><strong>Website URL:</strong> <a href='http://www.stanford.edu' target='_blank'>http://www.stanford.edu</a></p><p><strong>LinkedIn URL:</strong> <a href='http://www.linkedin.com/school/stanford-university' target='_blank'>http://www.linkedin.com/school/stanford-university</a></p><p><strong>Headquarters:</strong> 450 Jane Stanford Way, Stanford, CA 94305, US</p><p><strong>Founded:</strong> 1885</p></div></div></body>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+    </script>
+    </html>
+    
